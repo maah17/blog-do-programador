@@ -1,0 +1,95 @@
+<html>
+<head>
+  <meta />
+  <title>Blog</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="blog.css" />
+</head>
+<script>
+    function valida(){
+        if(window.confirm("você prefere backend?")==true){
+            window.location.href="./blog/nodejs.html"
+        }
+    }
+
+    function alterarImagem() {
+            
+
+            
+            if (selecao.value == 'a') {
+                document.getElementById('img').src = 'b99.jpg';
+            } else if (opcaoSelecionada == 'b') {
+                imagemElement.src = 'friends.jpg';
+            } else if (opcaoSelecionada == 'c') {
+                imagemElement.src = 'breaking.jpg';
+            }
+          }         
+</script>
+<body>
+
+  <div class="post-container">
+    <div class="post">
+    <p class="date">02 de outubro de 2023</p>
+    <h1>Primeira Publicação do Blog do Programador</h1>
+    <div class="post-content">
+
+    <section class="conteudo">
+    <div class="itens">
+    <a href="html.html"><p>HTML</p></a>
+    </div>
+    <div class="itens">
+    <a href="css.html"><p>CSS</p></a>
+    </div>
+    <div class="itens">
+    <a href="javascript.html"><p>JavaScript</p></a>
+    </div>
+    </section>
+
+    </div>
+    </div>
+
+    <hr />
+
+    <div class="post">
+    <p class="date">03 de outubro de 2023</p>
+    <p></p>
+    <h1>Segunda Publicação do Blog do Programador</h1>
+    <div class="post-content">
+    </div>
+
+    </div>
+
+    <section class="conteudo">
+    <div class="itens">
+    <a href="#" onclick="valida()"><p>NODEJS</p></a>
+    </div>
+    <div class="itens">
+    <a href="react.html"><p>REACT</p></a>
+    </div>
+    </section>
+
+    <hr />
+    
+    <div class="post">
+    
+    <p class="date">04 de outubro de 2023</p>
+    <p>
+    </p>
+    <h1>Terceira Publicação do Blog do Programador</h1>
+
+    <div class="post-content">
+      <select name="selecao" id="selecao" onchange="alterarImagem()">
+        <option value="a" >brooklyn 99</option>
+        <option value="b" >friends</option>
+        <option value="c" >breaking bad</option>
+      </select>
+  </div>
+   <img src="" alt="" id="img">
+
+    </div>
+  
+  </div>
+  
+</body>
+
+</html>

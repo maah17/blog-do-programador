@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html</title>
+</head>
+<script>
+    
+    function verificarCheckbox() {
+        if(checkbox.checked){
+            window.location.href='blog.html'
+        } else{
+            alert("Selecione o checkbox para voltar a página incial")
+        }
+    }
+</script>
+
+<body>
+
+<h1>HTML</h1>
+<p>Marque o checkbox antes de sair desta página:</p>
+
+<form>
+    <a href="#" onclick="verificarCheckbox()">Voltar</a>
+    <label for="checkbox">Checkbox:</label>
+    <input type="checkbox" id="checkbox">
+</form>
+</body>
+
+</html>
